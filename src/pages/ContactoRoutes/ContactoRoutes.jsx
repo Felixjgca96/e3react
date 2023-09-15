@@ -18,9 +18,9 @@ const CheckoutForm = ({ cartItems }) => {
             htmlFor="nombre"
             type="text"
             id="nombre"
-            placeholder="Tu nombre y apellido"
+            placeholder="Nombre y apellido"
           >
-            Nombre-Apellido
+            Nombre_Apellido
           </Input>
 
           <Input
@@ -28,16 +28,16 @@ const CheckoutForm = ({ cartItems }) => {
             htmlFor="email"
             type="mail"
             id="email"
-            placeholder="Tu email"
+            placeholder="Email"
           >
             Email
           </Input>
           <Input
             name="cellphone"
             htmlFor="celular"
-            type="text"
+            type="number"
             id="celular"
-            placeholder="Tu celular"
+            placeholder="Celular"
           >
             Celular
           </Input>

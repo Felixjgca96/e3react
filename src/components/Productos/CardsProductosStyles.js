@@ -6,6 +6,7 @@ export const ProductosContainer = styled.div`
   place-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 1400px;
   h3 {
     font-size: 4rem;
     margin-top: 50px;

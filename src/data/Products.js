@@ -106,6 +106,70 @@ export const products = [
     category: "niño",
     img: "./mochilaniño.png",
   },
+
+  {
+    id: 16,
+    title: "Buzo Niño",
+    price: "1500",
+    category: "niño",
+    img: "./buzoniño.png",
+  },
+  {
+    id: 17,
+    title: "Jogger Niño",
+    price: "1500",
+    category: "niño",
+    img: "./joggerniño.png",
+  },
+  {
+    id: 18,
+    title: "Musculosa Niño",
+    price: "1500",
+    category: "niño",
+    img: "./musculosaniño.png",
+  },
+  {
+    id: 19,
+    title: "Gorra Niño",
+    price: "3500",
+    category: "niño",
+    img: "./gorraniño.png",
+  },
+  {
+    id: 20,
+    title: "Remeron Dama",
+    price: "500",
+    category: "dama",
+    img: "./remerondama.png",
+  },
+  {
+    id: 21,
+    title: "Buzo Dama",
+    price: "4500",
+    category: "dama",
+    img: "./buzodama.png",
+  },
+  {
+    id: 22,
+    title: "Lenceria Dama",
+    price: "500",
+    category: "dama",
+    img: "./lenceriadama.png",
+  },
+  {
+    id: 23,
+    title: "Musculosa Dama",
+    price: "2500",
+    category: "dama",
+    img: "./musculosadama.png",
+  },
+  {
+    id: 24,
+    title: "Boxers",
+    price: "500",
+    category: "hombre",
+    img: "./ropainteriorhombre.png",
+  },
 ];
 
 export const TotalProducts = products.length;
