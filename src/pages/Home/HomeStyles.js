@@ -55,7 +55,6 @@ export const RecomendadosWrapper = styled.section`
     margin-top: 50px;
     margin-bottom: 10px;
     color: white;
-
     text-align: center;
 
     @media (max-width: 900px) {
