@@ -3,7 +3,8 @@ import Submit from "../../components/UI/Submit/Submit";
 import { checkoutInitialValues } from "../../formik/initialValues";
 import { checkoutValidationSchema } from "../../formik/validationSchema";
 import { CheckoutDatosStyled, Form, Formik } from "./ContactoRoutesStyles";
-const CheckoutForm = ({ cartItems }) => {
+
+const CheckoutForm = ({}) => {
   return (
     <CheckoutDatosStyled>
       <h2>Ingresá tus datos</h2>

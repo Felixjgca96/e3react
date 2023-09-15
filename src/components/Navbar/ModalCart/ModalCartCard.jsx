@@ -21,28 +21,9 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import { ButtonModal } from "../modal/ModalStyled";
 
-const customStylesPapelera = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    border: "2px solid white ",
-    background: "black",
-    padding: "5px 10px",
-    borderRadius: "40px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    textAlign: "center",
-    fontSize: "12px",
-  },
-};
 const customStyles = {
   content: {
-    top: "50%",
+    top: "90%",
     left: "50%",
     right: "auto",
     bottom: "auto",
@@ -146,7 +127,7 @@ const ModalCartCard = ({ img, title, desc, price, quantity, id }) => {
       <Modal
         isOpen={borrarIsOpen}
         onRequestClose={closeBorrar}
-        style={customStylesPapelera}
+        style={customStyles}
         contentLabel="Example Modal"
       >
         <h2>¿Deseas borrar este producto?</h2>

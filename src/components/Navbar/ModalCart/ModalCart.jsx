@@ -32,7 +32,7 @@ import { ButtonModal } from "../modal/ModalStyled";
 
 const customStyles = {
   content: {
-    top: "50%",
+    top: "90%",
     left: "50%",
     right: "auto",
     bottom: "auto",
