@@ -5,11 +5,15 @@ import storage from "redux-persist/lib/storage";
 
 import categoriesReducer from "./categories/categoriesSlice";
 import productsReducer from "./products/productsSlice";
+import recommendedReducer from "./recommended/recommendedSlice";
+
 import cartReducer from "./cart/cartSlice";
 
 const reducers = combineReducers({
   categories: categoriesReducer,
   products: productsReducer,
+  recommended: recommendedReducer,
+
   cart: cartReducer,
 });
 

@@ -42,3 +42,25 @@ export const ButtonContainerStyled = styled.div`
   gap: 20px;
   margin-top: 1rem;
 `;
+export const RecomendadosWrapper = styled.section`
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 4rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: white;
+
+    @media (max-width: 900px) {
+      font-size: 2.7rem;
+    }
+    @media (max-width: 470px) {
+      font-size: 1.6rem;
+    }
+  }
+`;
