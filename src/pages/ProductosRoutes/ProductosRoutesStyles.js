@@ -17,7 +17,7 @@ export const ProductosRoutesContainerStyled = styled.section`
   margin: 0 auto;
   margin-top: 40px; */
   margin: 0 auto;
-  margin-top: 110px;
+  margin-top: 90px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;

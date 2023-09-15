@@ -26,7 +26,7 @@ export const CategoriasContainerCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
   user-select: none;
 `;
@@ -35,7 +35,7 @@ export const CardCategoria = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
 
   width: 80px;
   height: 140px;
@@ -46,21 +46,24 @@ export const CardCategoria = styled(motion.div)`
   border-radius: 15px;
   cursor: pointer;
 
-  @media (max-width: 400px) {
-    width: 70px;
-    height: 130px;
-    padding: 5px;
+  @media (max-width: 520px) {
+    width: 60px;
+    height: 110px;
+    padding: 2px;
   }
 
   h2 {
     font-size: 1rem;
+    @media (max-width: 520px) {
+      font-size: 0.8rem;
+    }
   }
   img {
     width: 60px;
     height: 60px;
-    @media (max-width: 400px) {
-      width: 50px;
-      height: 50px;
+    @media (max-width: 520px) {
+      width: 40px;
+      height: 40px;
     }
   }
   :first-child {

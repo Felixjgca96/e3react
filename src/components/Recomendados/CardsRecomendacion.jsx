@@ -3,7 +3,7 @@ import Button from "../UI/Button/Button";
 import CardRecomendacion from "./CardRecomendacion";
 import { CardsContainer } from "./CardsRecomendacionStyled";
 import { useSelector } from "react-redux";
-
+import { Link } from "react-router-dom";
 const CardsRecomendacion = () => {
   const { recommended } = useSelector((state) => state.recommended);
 
@@ -14,7 +14,9 @@ const CardsRecomendacion = () => {
           return <CardRecomendacion key={recomendado.id} {...recomendado} />;
         })}
       </CardsContainer>
-      <Button>Ver más</Button>
+      <Button>
+        <Link to="/productosroutes">Ver mas</Link>
+      </Button>
     </>
   );
 };
