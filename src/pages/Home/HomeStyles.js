@@ -56,6 +56,8 @@ export const RecomendadosWrapper = styled.section`
     margin-bottom: 10px;
     color: white;
 
+    text-align: center;
+
     @media (max-width: 900px) {
       font-size: 2.7rem;
     }

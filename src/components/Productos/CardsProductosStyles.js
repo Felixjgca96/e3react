@@ -12,6 +12,7 @@ export const ProductosContainer = styled.div`
     margin-top: 50px;
     margin-bottom: 10px;
     color: white;
+    text-align: center;
 
     @media (max-width: 900px) {
       font-size: 2.7rem;
