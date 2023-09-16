@@ -6,15 +6,13 @@ export const checkoutValidationSchema = Yup.object({
   cellphone: Yup.string()
     .min(10, "Mínimo de caracteres: 10")
     .required("Campo Requerido"),
-  location: Yup.string().required("Campo Requerido"),
-  address: Yup.string().required("Campo Requerido"),
 });
 
 export const registerValidationSchema = Yup.object({
   name: Yup.string().required("Campo Requerido"),
   email: Yup.string().email("Email inválido").required("Campo Requerido"),
   password: Yup.string()
-    .min(10, "Mínimo de caracteres: 10")
+    .min(6, "Mínimo de caracteres: 6")
     .required("Campo Requerido"),
 });
 

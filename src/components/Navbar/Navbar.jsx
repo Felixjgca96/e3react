@@ -48,7 +48,8 @@ function Navbar() {
           <Link to="/productosroutes">
             <LinkNav> Productos</LinkNav>
           </Link>
-          <Link to="/contactoroutes">
+
+          <Link to="/checkout">
             <LinkNav> Contacto</LinkNav>
           </Link>
         </NavListPrincipal>

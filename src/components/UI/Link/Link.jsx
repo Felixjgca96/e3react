@@ -4,7 +4,7 @@ const Link = ({ radius = "32", to = "/" }) => {
   return (
     <ContainerLinkStyled whileTap={{ scale: 0.95 }}>
       <StyledLink radius={radius} to={to}>
-        <span> Volver </span>
+        <span> Home </span>
       </StyledLink>
     </ContainerLinkStyled>
   );

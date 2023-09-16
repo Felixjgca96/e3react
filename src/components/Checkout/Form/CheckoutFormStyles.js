@@ -12,6 +12,12 @@ export const CheckoutDatosStyled = styled.div`
   padding: 0px;
   gap: 0px;
   width: 300px;
+  h2 {
+    @media (max-width: 375px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
 `;
 
 export const Formik = styled(FormikContainer)`
