@@ -49,6 +49,27 @@ const customStyles = {
     fontSize: "12px",
   },
 };
+
+const customStylesPapelera = {
+  content: {
+    top: "70%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    border: "2px solid white ",
+    background: "black",
+    padding: "5px 10px",
+    borderRadius: "40px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    fontSize: "12px",
+  },
+};
 const ModalCart = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -82,6 +103,16 @@ const ModalCart = () => {
   };
   // TERMINA
 
+  // PARA GRACIAS DEL CARRITO Y MODAL
+  const [graciasIsOpen, graciasSetIsOpen] = React.useState(false);
+  const openGracias = () => {
+    graciasSetIsOpen(true);
+  };
+
+  const closeGracias = () => {
+    graciasSetIsOpen(false);
+  };
+  // TERMINA
   return (
     <>
       {/* BORRAR CARRITO Y MODAL */}
@@ -97,6 +128,7 @@ const ModalCart = () => {
             onClick={() => {
               dispatch(clearCart());
               closeCancel();
+              dispatch(toggleHiddenCart());
             }}
           >
             Aceptar
@@ -119,6 +151,8 @@ const ModalCart = () => {
             onClick={() => {
               dispatch(clearCart());
               closeCompra();
+              dispatch(toggleHiddenCart());
+              openGracias();
             }}
           >
             Aceptar
@@ -128,6 +162,23 @@ const ModalCart = () => {
       </Modal>
       {/* COMPRAR CARRITO Y MODAL */}
 
+      {/* GRACIAS CARRITO Y MODAL */}
+      <Modal
+        isOpen={graciasIsOpen}
+        onRequestClose={closeGracias}
+        style={customStylesPapelera}
+        contentLabel="Example Modal"
+      >
+        <h2>Muchas gracias por tu compra.</h2>
+        <img
+          src="./celebracion.gif"
+          alt=""
+          style={{
+            width: "150px ",
+          }}
+        />
+      </Modal>
+      {/* GRACIAS CARRITO Y MODAL */}
       {!hiddenCart && (
         <ModalOverlayStyled
           onClick={() => dispatch(toggleHiddenCart())}
