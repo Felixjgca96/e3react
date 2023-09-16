@@ -12,7 +12,7 @@ const Gracias = () => {
       <GraciasTextStyled>
         <GraciasTitleStyled>MUCHAS GRACIAS</GraciasTitleStyled>
         <p>
-          Sus datos han sido recibidos, en menos de 24 horas no estaremos
+          Sus datos han sido recibidos, en menos de 24 horas nos estaremos
           comunicando con usted.
         </p>
         <Link />
