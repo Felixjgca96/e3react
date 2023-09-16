@@ -63,16 +63,6 @@ const ModalCartCard = ({ img, title, desc, price, quantity, id }) => {
   };
   // TERMINA
 
-  // PARA BORRAR UN PRODUCTO Y MODAL
-  const [borrarIsOpen, borrarSetIsOpen] = React.useState(false);
-  const openBorrar = () => {
-    borrarSetIsOpen(true);
-  };
-
-  const closeBorrar = () => {
-    borrarSetIsOpen(false);
-  };
-  // TERMINA
   return (
     <>
       <ProductContainerStyled>
@@ -123,27 +113,6 @@ const ModalCartCard = ({ img, title, desc, price, quantity, id }) => {
         <h2>Has sumado otro producto</h2>
       </Modal>
       {/* SUMAR UN PRODUCTO Y MODAL */}
-      {/* BORRAR PRODUCTO Y MODAL */}
-      <Modal
-        isOpen={borrarIsOpen}
-        onRequestClose={closeBorrar}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <h2>¿Deseas borrar este producto?</h2>
-        <div style={{ display: "flex", justifyContent: "center", gap: "2rem" }}>
-          <ButtonModal
-            onClick={() => {
-              dispatch(removeFromCart(id));
-              closeBorrar();
-            }}
-          >
-            Aceptar
-          </ButtonModal>
-          <ButtonModal onClick={closeBorrar}>Cancelar</ButtonModal>
-        </div>
-      </Modal>
-      {/* BORRAR PRODUCTO Y MODAL */}
     </>
   );
 };

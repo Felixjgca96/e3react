@@ -13,7 +13,6 @@ const reducers = combineReducers({
   categories: categoriesReducer,
   products: productsReducer,
   recommended: recommendedReducer,
-
   cart: cartReducer,
 });
 
