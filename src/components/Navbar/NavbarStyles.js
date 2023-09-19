@@ -117,13 +117,6 @@ export const UserNavStyled = styled.div`
   }
 `;
 
-export const UserImageStyled = styled.img`
-  width: 30px;
-  height: 30px;
-  border-radius: 100px;
-  cursor: pointer;
-`;
-
 export const SpanStyled = styled.span`
   &:hover {
     text-decoration: underline;
@@ -133,10 +126,12 @@ export const MenuStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 980px) {
+    order: 2;
+  }
 `;
 export const MenuContainer = styled.div`
   display: none;
-
   @media (max-width: 980px) {
     display: flex;
     font-size: 2rem;
@@ -213,10 +208,9 @@ export const LinkNav = styled.a`
 
 export const Logo = styled.div`
   img {
-    width: 90px;
-    cursor: pointer;
+    width: 65px;
     @media (max-width: 400px) {
-      width: 80px;
+      width: 55px;
     }
   }
   img:hover {
