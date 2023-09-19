@@ -25,17 +25,9 @@ export const ModalOverlayStyled = styled(motion.div)`
   top: 0;
   left: 0;
   z-index: 50;
-  width: calc(100vw - 450px);
+  width: calc(100vw - 0px);
   height: 100vh;
-  @media (max-width: 540px) {
-    width: calc(100vw - 350px);
-  }
-  @media (max-width: 450px) {
-    width: calc(100vw - 300px);
-  }
-  @media (max-width: 390px) {
-    width: calc(100vw - 250px);
-  }
+
   ${({ isHidden }) =>
     !isHidden &&
     css`
