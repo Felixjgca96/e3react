@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GraciasContainerStyled = styled.div`
   margin: 0 auto;
-  margin-top: 110px;
+  margin-top: 100px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;

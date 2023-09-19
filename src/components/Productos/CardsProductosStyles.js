@@ -9,7 +9,7 @@ export const ProductosContainer = styled.div`
   max-width: 1400px;
   h3 {
     font-size: 4rem;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 10px;
     color: white;
     text-align: center;

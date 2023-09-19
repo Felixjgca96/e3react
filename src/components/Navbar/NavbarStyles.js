@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 
 export const NavbarContainerStyled = styled.div`
-  height: 70px;
+  height: 50px;
   background-color: #18191a;
   display: flex;
   justify-content: space-between;
@@ -173,7 +173,7 @@ export const NavListPrincipal = styled.div`
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 102px;
+      top: 82px;
       right: 2px;
       background-color: #00030a;
       width: 200px;

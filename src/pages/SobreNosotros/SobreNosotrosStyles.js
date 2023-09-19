@@ -16,7 +16,7 @@ export const AboutContainerStyled = styled.section`
   margin: 0 auto;
   margin-top: 90px; */
   margin: 0 auto;
-  margin-top: 130px;
+  margin-top: 110px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;

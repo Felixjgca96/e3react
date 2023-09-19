@@ -3,7 +3,7 @@ import { Formik as FormikContainer, Form as FormikForm } from "formik";
 
 export const CheckoutDatosStyled = styled.div`
   margin: 0 auto;
-  margin-top: 110px;
+  margin-top: 90px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;

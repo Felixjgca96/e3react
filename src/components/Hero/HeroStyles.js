@@ -5,7 +5,7 @@ export const HeroContainerStyled = styled.section`
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 20px;
+  margin-top: 0px;
   padding-top: 10px;
   padding-bottom: 20px;
   border-radius: 100px;
