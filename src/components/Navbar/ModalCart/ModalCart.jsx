@@ -207,15 +207,6 @@ const ModalCart = () => {
             <MainContainerStyled>
               <TitleStyled>
                 <h1>Tus Productos</h1>
-                <Increase
-                  onClick={() => {
-                    openCancel();
-                  }}
-                  bgColor="black"
-                  disabled={!cartItems.length}
-                >
-                  <IoMdTrash />
-                </Increase>
               </TitleStyled>
 
               <ProductsWrapperStyled>
@@ -255,6 +246,15 @@ const ModalCart = () => {
                 >
                   Finalizar pedido
                 </Submit>
+                <Increase
+                  onClick={() => {
+                    openCancel();
+                  }}
+                  bgColor="black"
+                  disabled={!cartItems.length}
+                >
+                  <IoMdTrash />
+                </Increase>
               </ButtonContainerStyled>
             </PriceContainerStyled>
           </ContainerStyled>

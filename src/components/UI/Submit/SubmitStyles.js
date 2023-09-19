@@ -13,7 +13,10 @@ export const ButtonSubmitStyled = styled(motion.button)`
   cursor: pointer;
   margin-top: 15px;
   border: 2px solid white;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;

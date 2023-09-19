@@ -52,8 +52,9 @@ export const CloseButtonStyled = styled(motion.button)`
 
 export const TitleStyled = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 10px;
 
   & h1 {
     margin-top: 10px;
@@ -177,7 +178,10 @@ export const EnvioStyled = styled(SubtotalStyled)``;
 export const TotalStyled = styled(SubtotalStyled)``;
 
 export const ButtonContainerStyled = styled(SubtotalStyled)`
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
 `;
 
 export const QuantityContainerStyled = styled.div`
