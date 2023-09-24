@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   *{
     list-style: none;
     text-decoration: none;
-}
+  }
   html{
     scroll-behavior: smooth;
   }
